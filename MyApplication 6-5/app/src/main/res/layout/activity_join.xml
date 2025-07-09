@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bottom_border"
+        android:orientation="horizontal"
+        android:textStyle="bold">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/addfriend"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="SIGN UP"
+            android:textColor="#000000"
+            android:textSize="40dp" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/User_Id"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="아이디"
+        android:padding="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/User_Pwd"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:padding="10dp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/User_Pwd2"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_background"
+
+        android:ems="10"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/User_Name"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="사용할 닉네임"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/User_Home"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="집주소"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/User_Phone"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="전화번호 : 010-XXXX-XXXX"
+
+        android:inputType="phone" />
+
+    <android.widget.Button
+        android:id="@+id/submit"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_border1"
+        android:text="회원가입"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <android.widget.Button
+        android:id="@+id/back2"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_border2"
+        android:text="취소"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

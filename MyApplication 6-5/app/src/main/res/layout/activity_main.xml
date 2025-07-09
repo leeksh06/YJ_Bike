@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="301dp"
+        android:layout_height="147dp"
+        android:src="@drawable/mainchr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="372dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/not"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <android.widget.Button
+                android:id="@+id/btnNot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_border"
+                android:text="공지사항"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+
+            <!--  <TextView
+                  android:id="@+id/textarea1"
+                  android:layout_width="match_parent"
+                  android:layout_height="43dp"
+                  android:text="" /> -->
+
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/use"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <android.widget.Button
+                android:id="@+id/btnUse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="@drawable/btn_border"
+                android:text="사용 방법"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+
+            <!--<TextView
+                android:id="@+id/textarea2"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="" />-->
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/free"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <android.widget.Button
+                android:id="@+id/btnFree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_border"
+                android:text="자유게시판"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <!--  <TextView
+                  android:id="@+id/textarea3"
+                  android:layout_width="match_parent"
+                  android:layout_height="43dp"
+                  android:text="" />-->
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ask"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <android.widget.Button
+                android:id="@+id/btnAsk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_border"
+                android:text="문의 게시판"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <!--<TextView
+                android:id="@+id/textarea4"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="" />-->
+
+
+            <!--<TextView
+                android:id="@+id/textarea5"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="" />-->
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ranking"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <android.widget.Button
+                android:id="@+id/btnRanking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_border"
+                android:text="랭킹"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/userupdate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <android.widget.Button
+                android:id="@+id/userTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_border"
+                android:text="회원정보수정"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <android.widget.Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_border"
+                android:text="로그아웃"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <!--<TextView
+                android:id="@+id/textarea6"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="" />-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

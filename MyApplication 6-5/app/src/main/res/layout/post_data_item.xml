@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:visibility="invisible"
+
+            android:id="@+id/postIdx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout1"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout1"/>
+        <TextView
+            android:visibility="invisible"
+
+            android:id="@+id/postCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout1"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout1"/>
+
+        <ImageView
+            android:id="@+id/postThum"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/constraintLayout1"
+            app:layout_constraintStart_toEndOf="@id/postThum"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout1">
+
+            <TextView
+                android:id="@+id/postTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제목"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="@id/constraintLayout2"
+                app:layout_constraintTop_toTopOf="@id/constraintLayout2"/>
+
+
+            <LinearLayout
+                android:id="@+id/postReplyCount_wrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/postTitle"
+                app:layout_constraintStart_toEndOf="@id/postTitle"
+                app:layout_constraintTop_toTopOf="@+id/postTitle">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="("
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/postReplyCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="댓글수"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=")"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/postViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#000"
+                app:layout_constraintTop_toTopOf="@id/constraintLayout2"
+                app:layout_constraintEnd_toEndOf="@id/constraintLayout2"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="조회수: "
+                android:textColor="#000"
+                app:layout_constraintEnd_toStartOf="@id/postViews"
+                app:layout_constraintTop_toTopOf="@id/postViews" />
+
+            <TextView
+                android:id="@+id/postUserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@id/constraintLayout2"
+                app:layout_constraintStart_toStartOf="@id/constraintLayout2"/>
+
+            <TextView
+                android:id="@+id/postDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="날짜"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@id/constraintLayout2"
+                app:layout_constraintEnd_toEndOf="@id/constraintLayout2"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
