@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼</title>
+   
+    <!-- <link rel="stylesheet" href="./quiz07.css"> -->
+    <style>
+	header#header { 
+		background:#fff; 
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		}
+      .member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 20px; /* 폰트 크기를 키워줌 */
+  padding: 30px; /* 내부 여백을 추가해줌 */
+}
+.field-wrap {
+  width: 500px; /* 폭을 더 넓게 조정 */
+  text-align: center;
+  margin-bottom: 20px; /* 필드 간의 간격을 더 벌림 */
+}
+input[type="text"],
+    input[type="password"],
+    input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+    }
+    .field {
+        width: 300px;
+      }
+      input[type="submit"] {
+  width: 300px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+        font-size: 16px;
+        padding: 10px;
+        margin: 5px 0;
+}
+
+input[type="button"],input[type="number"] {
+  width: 300px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+        font-size: 16px;
+        padding: 10px;
+        margin: 5px 0;
+}
+.tel-number select {
+  font-size: 20px;
+  width: 300px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+
+        padding: 10px;
+        margin: 5px 0;
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="member">
+        <a href="test.jsp"> <img src="./logo.png" alt="Your Logo" /> </a>
+        <form action="register" method="post">
+            <div class="field">
+                <label for="id">ID</label>
+                <input type="text" id="id" name="id">
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input class="userpw" type="password" id="password" name="password">
+            </div>
+            <div class="field">
+                <label for="password_confirm">Revalidate password</label>
+                <input class="userpw-confirm" type="password" id="password_confirm" name="password_confirm">
+            </div>
+            <div class="field">
+                <label for="nickname">Name</label>
+                <input type="text" id="nickname" name="nickname">
+            </div>
+            <div class="field tel-number">
+                <label for="phone_number">Mobile phone</label>
+                <select>
+                    <option value="">South Korea +82</option>
+                </select>
+                <div>
+                    <input type="tel" id="phone_number" name="phone_number" placeholder="enter phone number">
+                    <input type="button" value="Get verification code">
+                </div>
+                <input type="number" placeholder="Enter your verification number">
+            </div>
+            <input type="submit" value="sign up">
+        </form>
+    </div>
+</body>
+</html>

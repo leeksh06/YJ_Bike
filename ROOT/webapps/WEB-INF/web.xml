@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Chapter15</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+
+  <servlet>
+      <servlet-name>ServletTest</servlet-name>
+      <servlet-class>ServletTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ServletTest</servlet-name>
+      <url-pattern>/sTest</url-pattern>
+  </servlet-mapping>
+    <servlet>
+      <servlet-name>ServletLifeCycle</servlet-name>
+      <servlet-class>ServletLifeCycle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ServletLifeCycle</servlet-name>
+      <url-pattern>/sCycle</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 2020.02.26.   by jwlee 
+  <servlet>
+      <servlet-name>ServletLifeCycle</servlet-name>
+      <servlet-class>ServletLifeCycle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ServletLifeCycle</servlet-name>
+      <url-pattern>/ServletLifeCycle</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+      <servlet-name>BoardFrontControllerClass</servlet-name>
+      <servlet-class>controller.BoardFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>BoardFrontControllerClass</servlet-name>
+      <url-pattern>*.bo</url-pattern>
+  </servlet-mapping>
+  -->
+</web-app>

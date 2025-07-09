@@ -1,0 +1,32 @@
+div#wrap {
+		background:#fff; 
+		}
+        header#header { 
+		background:#fff; 
+		text-align: center;
+		justify-content: center;
+    align-items: center;
+		}
+        nav#nav {  
+		background-color: rgb(100, 149, 237); 
+		color: white;
+		}
+nav#nav ul li:hover {
+    background-color:#A9A9F5; opacity: 0.9;
+}
+
+<div id="wrap">
+    <header id="header">
+       <a href="test.html"> <img src="./logo.png" alt="Your Logo" /> </a>
+	  
+    </header>
+    <nav id="nav">
+        <ul>
+            <li>소개</li>
+            <li>게시판</li>
+            <li>사용 방법</li>   
+			<li>공지사항</li> 
+			<li>키트구매처</li> 
+        </ul>       
+    </nav>
+</div>

@@ -1,0 +1,266 @@
+.main_header {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(211, 211, 211);
+    }
+
+    .main_header a {
+        text-decoration: none;
+        outline: none;
+    }
+
+    .first_header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .first_header > h2 {
+        margin-left: 20px;
+    }
+
+    .first_header > nav {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main_header > li {
+        font-size: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+   
+
+ /* aside {
+width: 300px;  
+display: flex;
+flex-direction: column;
+
+} */
+
+/* .num1, .num2, .num3 {
+height: 500px; 
+width: 400px;
+}
+
+.num1 {
+
+border:2px solid black;
+}
+
+.num2{
+
+border:2px solid black;
+}
+
+.num3 {
+
+border:2px solid black;
+} */
+section#container {
+  width : 950px;
+height: 1450px;
+text-align:left;
+float:left;
+padding:10px;
+
+}
+
+div.content {
+background:#fff;
+}
+aside#aside {
+
+width: 250px;
+height: 800px;
+float: right;
+color: black;
+text-align: center;
+line-height: 50px;
+
+}
+
+div#rank{
+width : 250px;
+height: 500px;
+border: 1px solid black;
+}
+div#kitpic{
+width : 250px;
+height: 545px;
+border: 1px solid black;
+}
+.box1, .box2, .box3 {
+    display: inline-block;
+          width: 465px;
+          height: 700px;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 100px;
+          color: white;
+      }
+      .box1 {
+         border: 1px solid black;
+      }
+      .box2 {
+          border: 1px solid black;
+      }
+      .box3 {
+         border: 1px solid black;
+      }
+
+footer {
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+}
+
+
+
+form {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+input[type="text"] {
+    padding: 10px;
+  
+    border-radius: 3px;
+    width: 300px; /* ê²€ìƒ‰ì°½ì˜ ë„ˆë¹„ë¥¼ 300pxë¡œ ì„¤ì • */
+    height: 20px; /* ê²€ìƒ‰ì°½ì˜ ë†’ì´ë¥¼ 40pxë¡œ ì„¤ì • */
+}
+
+button {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 80px; /* ë²„íŠ¼ì˜ ë„ˆë¹„ë¥¼ 80pxë¡œ ì„¤ì • */
+    height: 45px; /* ë²„íŠ¼ì˜ ë†’ì´ë¥¼ 40pxë¡œ ì„¤ì • */
+}
+
+/* íŽ˜ì´ì§€ ì„ íƒì°½ */
+.page {
+display: none;
+}
+
+.active {
+font-weight: bold;
+text-decoration: underline;
+}
+
+.pagination {
+margin-top: 20px;
+}
+
+.pagination a {
+display: inline-block;
+margin-right: 10px;
+padding: 5px 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+text-decoration: none;
+color: #333;
+}
+
+.pagination a:hover {
+background-color: #eee;
+}
+.search {
+    /* margin-bottom: 200px; */
+    /* background-color: red; */
+    /* width: 400px;
+    height: 200px; */
+    bottom: 0px;
+    margin: auto;
+}
+.page_next{
+/* background-color: rgb(120, 172, 122); */
+margin:auto;
+}
+.page-item{
+display: inline-block;
+}
+.site_main{
+/* background-color: aquamarine; */
+width: 100%;
+}
+.main1{
+/* background-color: black; */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+}
+section{
+flex:1;
+}
+
+.img_main {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .img_main img {
+    margin-right: 100px;
+    margin-left: 50px;
+  }
+  .img_main > div{
+    background-color: white;
+  }
+  .img_main > h2{
+    background-color: gray;
+    margin: auto;
+  }
+
+
+  .img_main2 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .img_main2 img {
+    margin-right: 100px;
+    margin-left: 50px;
+  }
+  .img_main2 > div{
+    background-color: white;
+  }
+  .img_main2 > h2{
+    background-color: gray;
+    margin: auto;
+  }
+
+
+  .img_main3 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .img_main3 img {
+    margin-right: 100px;
+    margin-left: 50px;
+  }
+  .img_main3 > div{
+    background-color: white;
+  }
+  .img_main3 > h2{
+    background-color: gray;
+    margin: auto;
+  }
